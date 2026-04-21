@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local review screenshots (not for deploy)
+/image.png
+/image copy*.png

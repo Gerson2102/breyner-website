@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-surface: #131313;
+  --color-surface-raised: #1c1b1b;
+  --color-surface-contrast: #20201f;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-muted: #d4c5ab;
+  --color-on-surface-subtle: #9c8f78;
+  --color-outline: #353535;
+  --color-accent: #ffbf00;
+  --color-accent-hover: #ffe2ab;
+
+  --font-headline: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+
+  --radius-none: 0px;
+
+  --tracking-editorial: 0.2em;
+  --tracking-label: 0.15em;
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    border-radius: 0 !important;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    background: var(--color-surface);
+    color: var(--color-on-surface);
+  }
+
+  body {
+    background: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body), system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-surface);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline), system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .font-headline {
+    font-family: var(--font-headline), system-ui, sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+
+  .animate-hero-drift {
+    animation: hero-drift 18s ease-in-out infinite alternate;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 2.4s ease-in-out infinite;
+  }
+
+  .scroll-edge-fade-right {
+    -webkit-mask-image: linear-gradient(to right, black 0, black 94%, transparent 100%);
+            mask-image: linear-gradient(to right, black 0, black 94%, transparent 100%);
+  }
+}
+
+@keyframes hero-drift {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.08) translate3d(-1.5%, -1%, 0); }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50%      { transform: translateY(4px); opacity: 1; }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-hero-drift,
+  .animate-bounce-slow {
+    animation: none !important;
+  }
 }
