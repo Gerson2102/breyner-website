@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 
@@ -29,13 +29,13 @@ export default function Lightbox({
 }: LightboxProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const lastFocused = useRef<HTMLElement | null>(null);
+  const latest = useRef({ index, frames, onClose, onIndexChange });
+  latest.current = { index, frames, onClose, onIndexChange };
 
-  const go = useCallback(
-    (dir: -1 | 1) => {
-      onIndexChange((index + dir + frames.length) % frames.length);
-    },
-    [index, frames.length, onIndexChange]
-  );
+  const go = (dir: -1 | 1) => {
+    const { index, frames, onIndexChange } = latest.current;
+    onIndexChange((index + dir + frames.length) % frames.length);
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -45,9 +45,12 @@ export default function Lightbox({
     dialogRef.current?.focus();
 
     const onKey = (e: KeyboardEvent) => {
+      const { onClose, onIndexChange, index, frames } = latest.current;
       if (e.key === "Escape") onClose();
-      else if (e.key === "ArrowRight") go(1);
-      else if (e.key === "ArrowLeft") go(-1);
+      else if (e.key === "ArrowRight")
+        onIndexChange((index + 1 + frames.length) % frames.length);
+      else if (e.key === "ArrowLeft")
+        onIndexChange((index - 1 + frames.length) % frames.length);
     };
     window.addEventListener("keydown", onKey);
     return () => {
@@ -55,7 +58,7 @@ export default function Lightbox({
       document.body.style.overflow = prevOverflow;
       lastFocused.current?.focus();
     };
-  }, [open, go, onClose]);
+  }, [open]);
 
   if (!open) return null;
 

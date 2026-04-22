@@ -1,12 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { ArrowUpRight } from "lucide-react";
 import { site } from "@/content/site";
 import MediaSlot from "@/components/ui/MediaSlot";
 import SectionHeading from "@/components/ui/SectionHeading";
-import Lightbox, { type LightboxFrame } from "@/components/ui/Lightbox";
+import type { LightboxFrame } from "@/components/ui/Lightbox";
 import { cn } from "@/lib/cn";
+
+const Lightbox = dynamic(() => import("@/components/ui/Lightbox"), {
+  ssr: false,
+});
 
 const tiles = site.work.tiles;
 
@@ -95,13 +100,15 @@ export default function SelectedWork() {
         </div>
       </div>
 
-      <Lightbox
-        open={open}
-        index={openIdx ?? 0}
-        frames={frames}
-        onClose={() => setOpenIdx(null)}
-        onIndexChange={(i) => setOpenIdx(i)}
-      />
+      {open ? (
+        <Lightbox
+          open={open}
+          index={openIdx ?? 0}
+          frames={frames}
+          onClose={() => setOpenIdx(null)}
+          onIndexChange={(i) => setOpenIdx(i)}
+        />
+      ) : null}
     </section>
   );
 }

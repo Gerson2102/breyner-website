@@ -105,7 +105,9 @@ export default function Hero() {
         className="absolute bottom-6 md:bottom-10 right-6 md:right-12 lg:right-20 z-10 flex items-center gap-3 font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-muted hover:text-accent focus-visible:text-accent transition-colors duration-500"
       >
         <span className="hidden sm:inline">{site.hero.scrollCue}</span>
-        <ArrowDown size={14} strokeWidth={1.5} className="animate-bounce-slow" />
+        <span className="animate-bounce-slow inline-flex">
+          <ArrowDown size={14} strokeWidth={1.5} />
+        </span>
       </a>
     </section>
   );

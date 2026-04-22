@@ -54,11 +54,9 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <span>{s.label}</span>
-                  <ArrowUpRight
-                    size={12}
-                    strokeWidth={1.5}
-                    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                  />
+                  <span className="inline-flex transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                    <ArrowUpRight size={12} strokeWidth={1.5} />
+                  </span>
                 </a>
               </li>
             ))}
