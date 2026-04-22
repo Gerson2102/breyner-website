@@ -1,13 +1,11 @@
-export type AspectRatio = "3/4" | "4/3" | "1/1" | "16/9" | "21/9" | "9/16";
+export type AspectRatio = "3/4" | "4/3" | "1/1" | "16/9" | "9/16";
 
 export type WorkTile = {
   id: string;
   title: string;
   context: string;
-  aspect: AspectRatio;
   placeholder: string;
   alt: string;
-  span?: "sm" | "md" | "lg" | "xl";
 };
 
 export type SDTile = {
@@ -79,8 +77,6 @@ export const site = {
         id: "carrera-triptych",
         title: "911 GT3 RS",
         context: "La Cascada",
-        aspect: "16/9",
-        span: "xl",
         placeholder: `${IG}/porsche-gt3rs-scooter-track.webp`,
         alt: "Silver Porsche 911 GT3 RS parked on a mountain bridge with a waterfall cascading behind — cinematic editorial frame.",
       },
@@ -88,7 +84,6 @@ export const site = {
         id: "ferrari-488-pista",
         title: "Ferrari 488 Pista",
         context: "Red with White Stripe",
-        aspect: "3/4",
         placeholder: `${IG}/ferrari-488-pista-red-white-stripe.webp`,
         alt: "Red Ferrari 488 Pista with center white racing stripe.",
       },
@@ -96,7 +91,6 @@ export const site = {
         id: "ferrari-sf90-front",
         title: "Ferrari SF90",
         context: "Matte Dossier",
-        aspect: "3/4",
         placeholder: `${IG}/ferrari-sf90-matte-black-front.webp`,
         alt: "Matte-black Ferrari SF90 front three-quarter, low contrast light.",
       },
@@ -104,7 +98,6 @@ export const site = {
         id: "crest-badge",
         title: "Crest",
         context: "Detail Study",
-        aspect: "1/1",
         placeholder: `${IG}/porsche-yellow-crest-badge.webp`,
         alt: "Macro of a Porsche crest badge on a yellow painted panel.",
       },
@@ -112,7 +105,6 @@ export const site = {
         id: "mclaren-f1-carbon",
         title: "McLaren F1",
         context: "Midnight Carbon",
-        aspect: "3/4",
         placeholder: `${IG}/mclaren-f1-green-side-carbon.webp`,
         alt: "Green McLaren F1 side profile, carbon detail visible.",
       },
@@ -120,7 +112,6 @@ export const site = {
         id: "mclaren-720s-livery",
         title: "McLaren 720S GT3",
         context: "Orange Livery",
-        aspect: "4/3",
         placeholder: `${IG}/mclaren-720s-gt3-dunkin-livery.webp`,
         alt: "McLaren 720S GT3 race car in orange partnership livery in the paddock.",
       },
@@ -128,7 +119,6 @@ export const site = {
         id: "huracan-tecnica",
         title: "Huracán Técnica",
         context: "Studio A",
-        aspect: "3/4",
         placeholder: `${IG}/lamborghini-huracan-tecnica-grey.webp`,
         alt: "Grey Lamborghini Huracán Técnica photographed in a controlled studio.",
       },
@@ -136,7 +126,6 @@ export const site = {
         id: "sf90-closeup",
         title: "911 GTS",
         context: "Yellow Detail",
-        aspect: "1/1",
         placeholder: `${IG}/porsche-gts-yellow-rear-taillight.webp`,
         alt: "Yellow Porsche 911 GTS rear taillight and spoiler — editorial macro detail.",
       },
@@ -144,7 +133,6 @@ export const site = {
         id: "gt4rs-hills",
         title: "718 GT4 RS",
         context: "Carbon Mirror",
-        aspect: "3/4",
         placeholder: `${IG}/porsche-gt4rs-pink-carbon-mirror.webp`,
         alt: "Pink Porsche 718 GT4 RS with a carbon-fibre wing mirror, editorial detail.",
       },
@@ -152,7 +140,6 @@ export const site = {
         id: "bmw-m4-csl",
         title: "BMW M4 CSL",
         context: "Main Street",
-        aspect: "4/3",
         placeholder: `${IG}/bmw-m4-csl-white-street.webp`,
         alt: "White BMW M4 CSL parked on a downtown street at dusk.",
       },
@@ -160,7 +147,6 @@ export const site = {
         id: "gt3-warehouse",
         title: "911 GT3",
         context: "The Warehouse",
-        aspect: "3/4",
         placeholder: `${IG}/porsche-911-gt3-white-rear-industrial.webp`,
         alt: "White Porsche 911 GT3 rear, photographed against an industrial backdrop.",
       },
@@ -168,7 +154,6 @@ export const site = {
         id: "gt3-cup",
         title: "911 GT3 Cup",
         context: "Track Day",
-        aspect: "3/4",
         placeholder: `${IG}/porsche-911-gt3-cup-red-track.webp`,
         alt: "Red Porsche 911 GT3 Cup car on a track paddock during a race weekend.",
       },
@@ -208,9 +193,9 @@ export const site = {
     headline: "SUBURBAN DRIVERS",
     tiles: [
       {
-        id: "sd-breyner-track",
-        placeholder: `${IG}/breyner-porsche-cap-track.webp`,
-        alt: "Steveon the grid at a track day, Porsche cap, camera in hand.",
+        id: "sd-steve-track",
+        placeholder: `${IG}/steve-porsche-cap-track.webp`,
+        alt: "Steve on the grid at a track day, Porsche cap, camera in hand.",
         caption: "On The Grid",
       },
       {
@@ -244,9 +229,9 @@ export const site = {
         caption: "Classic Mustang",
       },
       {
-        id: "sd-breyner-green-porsche",
-        placeholder: `${IG}/breyner-green-porsche-friend.webp`,
-        alt: "Stevewith a friend in front of a green Porsche.",
+        id: "sd-steve-green-porsche",
+        placeholder: `${IG}/steve-green-porsche-friend.webp`,
+        alt: "Steve with a friend in front of a green Porsche.",
         caption: "Friends & Machinery",
       },
       {
@@ -274,9 +259,9 @@ export const site = {
         caption: "Civic 197",
       },
       {
-        id: "sd-breyner-hotlap",
-        placeholder: `${IG}/breyner-strawhat-hotlap.webp`,
-        alt: "Stevebetween sessions at a track — straw hat, hotlap board.",
+        id: "sd-steve-hotlap",
+        placeholder: `${IG}/steve-strawhat-hotlap.webp`,
+        alt: "Steve between sessions at a track — straw hat, hotlap board.",
         caption: "Hotlap Board",
       },
       {
@@ -300,12 +285,12 @@ export const site = {
     eyebrow: "About",
     title: "Behind the Lens",
     portraitPrimary: {
-      src: `${IG}/breyner-portrait-911-gt3.webp`,
+      src: `${IG}/steve-portrait-911-gt3.webp`,
       alt: "Steve LePerk portrait with a Porsche 911 GT3 in frame — editorial.",
     },
     portraitAccent: {
-      src: `${IG}/breyner-strawhat-flag.webp`,
-      alt: "Stevein a straw hat holding the Costa Rica flag on a racing grid.",
+      src: `${IG}/steve-strawhat-flag.webp`,
+      alt: "Steve in a straw hat holding the Costa Rica flag on a racing grid.",
     },
     bio: [
       "Steve LePerk is an automotive photographer and audiovisual producer based in Costa Rica. His work lives at the intersection of editorial precision and insider access — built from six years of shaping the country's exotic-car community from within.",
@@ -322,13 +307,6 @@ export const site = {
     eyebrow: "Contact",
     headline: "Let's make something worth watching.",
     body: "Brand campaigns, commissioned shoots, event coverage, or press inquiries.",
-    projectTypes: [
-      "Photography commission",
-      "Event coverage",
-      "Brand partnership",
-      "Editorial / press",
-      "Other",
-    ],
     channels: [
       { label: "Instagram", href: "https://instagram.com/steve_leperk" },
       { label: "Suburban Drivers", href: "https://instagram.com/suburbandrivers" },

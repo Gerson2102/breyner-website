@@ -13,10 +13,7 @@ export default function Hero() {
   const [idx, setIdx] = useState(0);
 
   useEffect(() => {
-    if (
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
     }
     const i = window.setInterval(
