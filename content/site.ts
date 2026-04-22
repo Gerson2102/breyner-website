@@ -330,6 +330,5 @@ export const site = {
       { href: "#contact", label: "Contact" },
     ],
     location: "San José · Costa Rica",
-    copyright: `© ${new Date().getFullYear()} Steve LePerk. All rights reserved.`,
   },
 } as const;

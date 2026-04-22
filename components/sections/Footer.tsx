@@ -68,7 +68,7 @@ export default function Footer() {
 
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 pb-10 flex flex-col md:flex-row justify-between gap-4 border-t border-outline/30 pt-6">
         <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle">
-          {site.footer.copyright}
+          © {new Date().getFullYear()} Steve LePerk. All rights reserved.
         </p>
         <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle">
           {site.footer.location}

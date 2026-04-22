@@ -79,7 +79,7 @@ export default function SelectedWork() {
             <span className="font-headline uppercase tracking-[0.3em] text-[11px] text-accent">
               Closing Frame
             </span>
-            <p className="font-display text-2xl md:text-3xl lg:text-4xl text-on-surface leading-tight">
+            <p className="font-headline text-2xl md:text-3xl lg:text-4xl text-on-surface leading-tight">
               {`"The last frame is the one that tells you whether the night was worth printing."`}
             </p>
             <span className="font-headline uppercase tracking-[0.25em] text-[10px] md:text-[11px] text-on-surface-subtle">

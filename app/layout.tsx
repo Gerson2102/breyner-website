@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
+import { SITE_URL } from "@/lib/site-config";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -25,7 +26,7 @@ const ogImage = "/placeholders/instagram/vintage-ferrari-yellow-stripe-night.web
 export const metadata: Metadata = {
   title: "Steve LePerk — The Nocturnal Monograph",
   description,
-  metadataBase: new URL("https://breynerleperk.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Steve LePerk — The Nocturnal Monograph",
     description,
