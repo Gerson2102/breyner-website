@@ -25,7 +25,7 @@ export default function About() {
           </div>
           <div className="flex flex-col gap-1 max-w-[440px] mx-auto w-full pt-6 md:pt-4">
             <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface">
-              Breyner Leperk
+              Steve LePerk
             </p>
             <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle">
               Founder — Suburban Drivers
@@ -52,7 +52,7 @@ export default function About() {
               &ldquo;Every frame is made by someone who was in the room before the camera came out.&rdquo;
             </p>
             <footer className="mt-5 font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle">
-              Breyner Leperk — Founder, Suburban Drivers
+              Steve LePerk — Founder, Suburban Drivers
             </footer>
           </blockquote>
 

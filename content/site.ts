@@ -21,8 +21,8 @@ const IG = "/placeholders/instagram";
 
 export const site = {
   brand: {
-    name: "Breyner Leperk",
-    wordmark: "BREYNER LEPERK",
+    name: "Steve LePerk",
+    wordmark: "STEVE LEPERK",
     tagline: "The Nocturnal Monograph",
     roles: "Photography · Production · Events",
   },
@@ -36,7 +36,7 @@ export const site = {
   ],
 
   hero: {
-    headline: "BREYNER LEPERK",
+    headline: "STEVE LEPERK",
     sub: "Photography · Production · Events",
     scrollCue: "Scroll to enter",
     frames: [
@@ -64,7 +64,7 @@ export const site = {
   manifesto: {
     eyebrow: "Manifesto",
     body: "An automotive storyteller documenting the intersection of machinery, night culture, and Costa Rica's exotic-car scene. Six years behind the lens — and at the wheel of the community it was made for.",
-    attribution: "— Breyner Leperk, Founder of Suburban Drivers",
+    attribution: "— Steve LePerk, Founder of Suburban Drivers",
     backdrop: {
       src: `${IG}/mclaren-f1-wheel-orange-brakes.webp`,
       alt: "Glowing orange brake caliper inside a McLaren F1 wheel — atmospheric detail.",
@@ -210,7 +210,7 @@ export const site = {
       {
         id: "sd-breyner-track",
         placeholder: `${IG}/breyner-porsche-cap-track.webp`,
-        alt: "Breyner on the grid at a track day, Porsche cap, camera in hand.",
+        alt: "Steveon the grid at a track day, Porsche cap, camera in hand.",
         caption: "On The Grid",
       },
       {
@@ -246,7 +246,7 @@ export const site = {
       {
         id: "sd-breyner-green-porsche",
         placeholder: `${IG}/breyner-green-porsche-friend.webp`,
-        alt: "Breyner with a friend in front of a green Porsche.",
+        alt: "Stevewith a friend in front of a green Porsche.",
         caption: "Friends & Machinery",
       },
       {
@@ -276,7 +276,7 @@ export const site = {
       {
         id: "sd-breyner-hotlap",
         placeholder: `${IG}/breyner-strawhat-hotlap.webp`,
-        alt: "Breyner between sessions at a track — straw hat, hotlap board.",
+        alt: "Stevebetween sessions at a track — straw hat, hotlap board.",
         caption: "Hotlap Board",
       },
       {
@@ -301,14 +301,14 @@ export const site = {
     title: "Behind the Lens",
     portraitPrimary: {
       src: `${IG}/breyner-portrait-911-gt3.webp`,
-      alt: "Breyner Leperk portrait with a Porsche 911 GT3 in frame — editorial.",
+      alt: "Steve LePerk portrait with a Porsche 911 GT3 in frame — editorial.",
     },
     portraitAccent: {
       src: `${IG}/breyner-strawhat-flag.webp`,
-      alt: "Breyner in a straw hat holding the Costa Rica flag on a racing grid.",
+      alt: "Stevein a straw hat holding the Costa Rica flag on a racing grid.",
     },
     bio: [
-      "Breyner Leperk is an automotive photographer and audiovisual producer based in Costa Rica. His work lives at the intersection of editorial precision and insider access — built from six years of shaping the country's exotic-car community from within.",
+      "Steve LePerk is an automotive photographer and audiovisual producer based in Costa Rica. His work lives at the intersection of editorial precision and insider access — built from six years of shaping the country's exotic-car community from within.",
       "As the founder of Suburban Drivers, he documents what he helped create: a culture of machinery, craft, and night. Every frame is made by someone who was in the room before the camera came out.",
     ],
     stats: [
@@ -337,7 +337,7 @@ export const site = {
   },
 
   footer: {
-    wordmark: "BREYNER LEPERK",
+    wordmark: "STEVE LEPERK",
     tagline: "The Nocturnal Monograph",
     line: "Automotive storyteller documenting the intersection of machinery and culture through a cinematic lens.",
     socials: [
@@ -352,6 +352,6 @@ export const site = {
       { href: "#contact", label: "Contact" },
     ],
     location: "San José · Costa Rica",
-    copyright: `© ${new Date().getFullYear()} Breyner Leperk. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} Steve LePerk. All rights reserved.`,
   },
 } as const;

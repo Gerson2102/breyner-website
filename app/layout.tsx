@@ -23,27 +23,27 @@ const description =
 const ogImage = "/placeholders/instagram/vintage-ferrari-yellow-stripe-night.webp";
 
 export const metadata: Metadata = {
-  title: "Breyner Leperk — The Nocturnal Monograph",
+  title: "Steve LePerk — The Nocturnal Monograph",
   description,
   metadataBase: new URL("https://breynerleperk.com"),
   openGraph: {
-    title: "Breyner Leperk — The Nocturnal Monograph",
+    title: "Steve LePerk — The Nocturnal Monograph",
     description,
     type: "website",
     locale: "en_US",
-    siteName: "Breyner Leperk",
+    siteName: "Steve LePerk",
     images: [
       {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Breyner Leperk — The Nocturnal Monograph",
+        alt: "Steve LePerk — The Nocturnal Monograph",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Breyner Leperk — The Nocturnal Monograph",
+    title: "Steve LePerk — The Nocturnal Monograph",
     description,
     images: [ogImage],
   },

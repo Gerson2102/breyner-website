@@ -83,7 +83,7 @@ export default function SelectedWork() {
               {`"The last frame is the one that tells you whether the night was worth printing."`}
             </p>
             <span className="font-headline uppercase tracking-[0.25em] text-[10px] md:text-[11px] text-on-surface-subtle">
-              — Breyner Leperk
+              — Steve LePerk
             </span>
           </div>
           <Tile

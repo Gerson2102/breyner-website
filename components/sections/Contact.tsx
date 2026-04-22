@@ -38,7 +38,7 @@ export default function Contact() {
               {`"The work lives at night. Write me when you're ready."`}
             </blockquote>
             <figcaption className="font-headline uppercase tracking-[0.3em] text-[11px] text-on-surface-subtle">
-              — Breyner Leperk
+              — Steve LePerk
             </figcaption>
           </figure>
 
