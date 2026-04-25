@@ -310,7 +310,7 @@ export const site = {
     channels: [
       { label: "Instagram", href: "https://instagram.com/steve_leperk" },
       { label: "Suburban Drivers", href: "https://instagram.com/suburbandrivers" },
-      { label: "Email", href: "mailto:hello@breynerleperk.com" },
+      { label: "Email", href: "mailto:hello@steveleperk.com" },
     ],
   },
 
