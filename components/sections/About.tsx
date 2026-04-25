@@ -52,7 +52,7 @@ export default function About() {
             </footer>
           </blockquote>
 
-          <dl className="grid grid-cols-3 gap-4 md:gap-8 pt-8 border-t border-outline/40">
+          <dl className="grid grid-cols-2 gap-4 md:gap-8 pt-8 border-t border-outline/40">
             {site.about.stats.map((stat) => (
               <div key={stat.label} className="flex flex-col gap-2">
                 <dt className="font-headline uppercase tracking-[0.25em] text-[10px] text-on-surface-subtle order-2">

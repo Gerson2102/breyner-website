@@ -40,14 +40,14 @@ export const site = {
       {
         id: "challenger-halo",
         src: `${IG}/challenger-hellcat-red-halo.webp`,
-        alt: "Red Dodge Challenger Hellcat with a dramatic halo light effect — nocturnal portrait.",
+        alt: "Red Dodge Challenger Hellcat with a dramatic halo light effect.",
         caption: "Frame 01 — Red Halo",
       },
       {
         id: "night-ferrari",
         src: `${IG}/vintage-ferrari-yellow-stripe-night.webp`,
         alt: "Vintage Ferrari with a yellow racing stripe, photographed at night under ambient street light.",
-        caption: "Frame 02 — Nocturnal Editorial",
+        caption: "Frame 02 — Yellow Stripe",
       },
       {
         id: "mustang-rain",
@@ -184,6 +184,7 @@ export const site = {
       src: "/suburban_logo/suburban-logo.webp",
       alt: "Suburban Drivers club logo — gold shield with checkered flag, established 2019.",
     },
+    meta: "Est. 2019 · 11,000+ Members · Costa Rica",
     tiles: [
       {
         id: "sd-steve-track",
@@ -270,8 +271,7 @@ export const site = {
         caption: "GT4 Pink",
       },
     ] satisfies SDTile[],
-    blurb: "Sports & Exotic Car Club · Est. 2019 · 11,000+ members strong.",
-    blurbEs: "Club de Autos Deportivos y Exóticos · Est. 2019 · 11,000+ miembros.",
+    blurbEs: "Club de Autos Deportivos y Exóticos · Hecho en Costa Rica.",
   },
 
   about: {
@@ -292,7 +292,6 @@ export const site = {
     stats: [
       { value: "6+", label: "Years Behind the Lens" },
       { value: "120+", label: "Events Covered" },
-      { value: "11K", label: "Community Members" },
     ],
   },
 

@@ -43,58 +43,57 @@ export default function SuburbanDrivers() {
       aria-labelledby="sd-heading"
       className="w-full bg-surface py-24 md:py-36 border-t border-outline/40 overflow-hidden"
     >
-      <div className="mx-auto max-w-[1600px] px-6 md:px-12 lg:px-20 mb-12 md:mb-16 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-        <div className="flex flex-col md:flex-row md:items-end gap-6 md:gap-8 lg:gap-10">
-          <div className="relative h-32 w-32 md:h-44 md:w-44 lg:h-52 lg:w-52 shrink-0 ring-1 ring-outline/40">
-            <Image
-              src={site.suburbanDrivers.logo.src}
-              alt={site.suburbanDrivers.logo.alt}
-              fill
-              sizes="(min-width: 1024px) 208px, (min-width: 768px) 176px, 128px"
-              className="object-cover"
-            />
-          </div>
-          <div className="flex flex-col gap-5">
-            <span className="font-headline uppercase tracking-[0.3em] text-[11px] text-on-surface-muted">
-              {site.suburbanDrivers.eyebrow}
-            </span>
-            <h2
-              id="sd-heading"
-              className="font-headline font-bold uppercase leading-[0.9] tracking-[0.04em] text-accent text-[12vw] md:text-[8vw] lg:text-[7vw]"
-            >
-              {site.suburbanDrivers.headline}
-            </h2>
-          </div>
+      <div className="mx-auto max-w-[1600px] px-6 md:px-12 lg:px-20 mb-10 md:mb-14 flex flex-col items-center text-center">
+        <span className="font-headline uppercase tracking-[0.3em] text-[11px] text-on-surface-muted">
+          {site.suburbanDrivers.eyebrow}
+        </span>
+        <div className="relative h-40 w-40 md:h-56 md:w-56 lg:h-64 lg:w-64 mt-6 md:mt-8">
+          <Image
+            src={site.suburbanDrivers.logo.src}
+            alt={site.suburbanDrivers.logo.alt}
+            fill
+            sizes="(min-width: 1024px) 256px, (min-width: 768px) 224px, 160px"
+            className="object-contain mix-blend-screen"
+          />
         </div>
+        <h2
+          id="sd-heading"
+          className="mt-6 md:mt-8 font-headline font-bold uppercase leading-[0.9] tracking-[0.04em] text-accent text-[12vw] md:text-[8vw] lg:text-[7vw]"
+        >
+          {site.suburbanDrivers.headline}
+        </h2>
+        <p className="mt-4 md:mt-5 font-headline uppercase tracking-[0.3em] text-[10px] md:text-xs text-on-surface-subtle">
+          {site.suburbanDrivers.meta}
+        </p>
+      </div>
 
-        <div className="hidden md:flex items-center gap-3">
-          <button
-            type="button"
-            onClick={() => scrollByViewport(-1)}
-            aria-label="Scroll gallery left"
-            disabled={!canLeft}
-            className={cn(
-              "inline-flex h-11 w-11 items-center justify-center border border-outline text-on-surface transition-all",
-              "hover:border-accent hover:text-accent focus-visible:border-accent focus-visible:text-accent",
-              "disabled:opacity-30 disabled:cursor-not-allowed"
-            )}
-          >
-            <ArrowLeft size={16} strokeWidth={1.5} />
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollByViewport(1)}
-            aria-label="Scroll gallery right"
-            disabled={!canRight}
-            className={cn(
-              "inline-flex h-11 w-11 items-center justify-center border border-outline text-on-surface transition-all",
-              "hover:border-accent hover:text-accent focus-visible:border-accent focus-visible:text-accent",
-              "disabled:opacity-30 disabled:cursor-not-allowed"
-            )}
-          >
-            <ArrowRight size={16} strokeWidth={1.5} />
-          </button>
-        </div>
+      <div className="hidden md:flex mx-auto max-w-[1600px] px-6 md:px-12 lg:px-20 mb-6 items-center justify-end gap-3">
+        <button
+          type="button"
+          onClick={() => scrollByViewport(-1)}
+          aria-label="Scroll gallery left"
+          disabled={!canLeft}
+          className={cn(
+            "inline-flex h-11 w-11 items-center justify-center border border-outline text-on-surface transition-all",
+            "hover:border-accent hover:text-accent focus-visible:border-accent focus-visible:text-accent",
+            "disabled:opacity-30 disabled:cursor-not-allowed"
+          )}
+        >
+          <ArrowLeft size={16} strokeWidth={1.5} />
+        </button>
+        <button
+          type="button"
+          onClick={() => scrollByViewport(1)}
+          aria-label="Scroll gallery right"
+          disabled={!canRight}
+          className={cn(
+            "inline-flex h-11 w-11 items-center justify-center border border-outline text-on-surface transition-all",
+            "hover:border-accent hover:text-accent focus-visible:border-accent focus-visible:text-accent",
+            "disabled:opacity-30 disabled:cursor-not-allowed"
+          )}
+        >
+          <ArrowRight size={16} strokeWidth={1.5} />
+        </button>
       </div>
 
       <div className="relative">
@@ -146,11 +145,8 @@ export default function SuburbanDrivers() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1600px] px-6 md:px-12 lg:px-20 mt-10 md:mt-12 flex flex-col md:flex-row gap-3 md:gap-6 md:items-baseline md:justify-end">
-        <p className="font-body text-accent/90 text-xs md:text-sm tracking-[0.25em] uppercase max-w-xl text-left md:text-right leading-relaxed">
-          {site.suburbanDrivers.blurb}
-        </p>
-        <p className="font-body text-on-surface-subtle/80 text-[10px] md:text-xs tracking-[0.2em] uppercase leading-relaxed text-left md:text-right">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-12 lg:px-20 mt-10 md:mt-12 flex justify-end">
+        <p className="font-body text-on-surface-subtle/80 text-[10px] md:text-xs tracking-[0.2em] uppercase leading-relaxed text-right">
           {site.suburbanDrivers.blurbEs}
         </p>
       </div>

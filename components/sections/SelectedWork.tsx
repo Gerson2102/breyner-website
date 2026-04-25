@@ -44,7 +44,7 @@ export default function SelectedWork() {
           title={site.work.sectionTitle}
         />
         <p className="font-body text-sm md:text-base text-on-surface-muted max-w-sm">
-          Twelve frames from the monograph. Click any tile to open the lightbox.
+          {tiles.length} frames from the archive. Click any tile to open the lightbox.
         </p>
       </div>
 
