@@ -37,13 +37,10 @@ export default function TopNav() {
         <a
           href="#top"
           className="group flex items-baseline gap-3 text-on-surface hover:text-accent transition-colors duration-300"
-          aria-label={`${site.brand.wordmark} — ${site.brand.tagline}`}
+          aria-label={site.brand.wordmark}
         >
           <span className="font-headline font-bold uppercase tracking-[0.3em] text-[13px] md:text-sm">
             {site.brand.wordmark}
-          </span>
-          <span className="hidden lg:inline font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle group-hover:text-accent transition-colors">
-            / {site.brand.tagline}
           </span>
         </a>
 

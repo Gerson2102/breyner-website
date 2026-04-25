@@ -56,9 +56,6 @@ export default function Hero() {
 
       <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 pb-14 md:pb-20 lg:pb-24">
         <div className="flex flex-col gap-7 md:gap-8">
-          <span className="font-headline uppercase tracking-[0.3em] text-[11px] md:text-xs text-accent">
-            {site.brand.tagline}
-          </span>
           <h1 className="font-headline font-bold leading-[0.88] tracking-[0.02em] text-on-surface text-[16vw] md:text-[13vw] lg:text-[11vw] uppercase">
             {site.hero.headline}
           </h1>
@@ -100,8 +97,8 @@ export default function Hero() {
 
       {/* Scroll cue (mobile + desktop) */}
       <a
-        href="#manifesto"
-        aria-label="Scroll to manifesto"
+        href="#about"
+        aria-label="Scroll to about Steve"
         className="absolute bottom-6 md:bottom-10 right-6 md:right-12 lg:right-20 z-10 flex items-center gap-3 font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-muted hover:text-accent focus-visible:text-accent transition-colors duration-500"
       >
         <span className="hidden sm:inline">{site.hero.scrollCue}</span>

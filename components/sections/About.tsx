@@ -18,10 +18,6 @@ export default function About() {
               fill
               sizes="(min-width: 1024px) 440px, (min-width: 768px) 40vw, 90vw"
             />
-            {/* Signature tag */}
-            <div className="pointer-events-none absolute left-0 -bottom-3 translate-y-full md:translate-y-0 md:-left-3 md:bottom-3 bg-accent text-surface font-headline uppercase tracking-[0.3em] text-[10px] px-3 py-1.5">
-              Est. Monograph
-            </div>
           </div>
           <div className="flex flex-col gap-1 max-w-[440px] mx-auto w-full pt-6 md:pt-4">
             <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface">

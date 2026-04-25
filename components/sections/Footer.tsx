@@ -6,14 +6,9 @@ export default function Footer() {
     <footer className="w-full bg-surface border-t border-outline/40">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
         <div className="md:col-span-5 flex flex-col gap-5">
-          <div className="flex flex-col gap-1">
-            <h3 className="font-headline font-bold uppercase tracking-[0.2em] text-on-surface text-sm">
-              {site.footer.wordmark}
-            </h3>
-            <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle">
-              {site.footer.tagline}
-            </p>
-          </div>
+          <h3 className="font-headline font-bold uppercase tracking-[0.2em] text-on-surface text-sm">
+            {site.footer.wordmark}
+          </h3>
           <p className="font-body text-sm leading-relaxed text-on-surface-muted max-w-sm">
             {site.footer.line}
           </p>

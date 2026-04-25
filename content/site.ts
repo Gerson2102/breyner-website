@@ -21,15 +21,14 @@ export const site = {
   brand: {
     name: "Steve LePerk",
     wordmark: "STEVE LEPERK",
-    tagline: "The Nocturnal Monograph",
     roles: "Photography · Production · Events",
   },
 
   nav: [
+    { href: "#about", label: "About" },
+    { href: "#suburban-drivers", label: "Suburban Drivers" },
     { href: "#work", label: "Work" },
     { href: "#services", label: "Services" },
-    { href: "#suburban-drivers", label: "Suburban Drivers" },
-    { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
   ],
 
@@ -57,16 +56,6 @@ export const site = {
         caption: "Frame 03 — Rain, Matte, Rear",
       },
     ],
-  },
-
-  manifesto: {
-    eyebrow: "Manifesto",
-    body: "An automotive storyteller documenting the intersection of machinery, night culture, and Costa Rica's exotic-car scene. Six years behind the lens — and at the wheel of the community it was made for.",
-    attribution: "— Steve LePerk, Founder of Suburban Drivers",
-    backdrop: {
-      src: `${IG}/mclaren-f1-wheel-orange-brakes.webp`,
-      alt: "Glowing orange brake caliper inside a McLaren F1 wheel — atmospheric detail.",
-    },
   },
 
   work: {
@@ -191,6 +180,10 @@ export const site = {
   suburbanDrivers: {
     eyebrow: "A Parallel Venture",
     headline: "SUBURBAN DRIVERS",
+    logo: {
+      src: "/suburban_logo/suburban-logo.webp",
+      alt: "Suburban Drivers club logo — gold shield with checkered flag, established 2019.",
+    },
     tiles: [
       {
         id: "sd-steve-track",
@@ -285,16 +278,16 @@ export const site = {
     eyebrow: "About",
     title: "Behind the Lens",
     portraitPrimary: {
-      src: `${IG}/steve-portrait-911-gt3.webp`,
-      alt: "Steve LePerk portrait with a Porsche 911 GT3 in frame — editorial.",
+      src: `${IG}/breyner-portrait.webp`,
+      alt: "Steve LePerk editorial portrait — close.",
     },
     portraitAccent: {
       src: `${IG}/steve-strawhat-flag.webp`,
       alt: "Steve in a straw hat holding the Costa Rica flag on a racing grid.",
     },
     bio: [
-      "Steve LePerk is an automotive photographer and audiovisual producer based in Costa Rica. His work lives at the intersection of editorial precision and insider access — built from six years of shaping the country's exotic-car community from within.",
-      "As the founder of Suburban Drivers, he documents what he helped create: a culture of machinery, craft, and night. Every frame is made by someone who was in the room before the camera came out.",
+      "I'm Steve LePerk — an automotive photographer and audiovisual producer based in Costa Rica. My work lives at the intersection of editorial precision and insider access, built from six years shaping the country's exotic-car community from within.",
+      "As founder of Suburban Drivers, I document what I helped create: a culture of machinery, craft, and night. Every frame is made by someone who was in the room before the camera came out.",
     ],
     stats: [
       { value: "6+", label: "Years Behind the Lens" },
@@ -316,17 +309,16 @@ export const site = {
 
   footer: {
     wordmark: "STEVE LEPERK",
-    tagline: "The Nocturnal Monograph",
     line: "Automotive storyteller documenting the intersection of machinery and culture through a cinematic lens.",
     socials: [
       { label: "Instagram", href: "https://instagram.com/steve_leperk" },
       { label: "Suburban Drivers", href: "https://instagram.com/suburbandrivers" },
     ],
     nav: [
+      { href: "#about", label: "About" },
+      { href: "#suburban-drivers", label: "Suburban Drivers" },
       { href: "#work", label: "Work" },
       { href: "#services", label: "Services" },
-      { href: "#suburban-drivers", label: "Suburban Drivers" },
-      { href: "#about", label: "About" },
       { href: "#contact", label: "Contact" },
     ],
     location: "San José · Costa Rica",
