@@ -28,7 +28,6 @@ export default function Services() {
                 <MediaSlot
                   src={item.placeholder}
                   alt={item.alt}
-                  fill
                   sizes="(min-width: 1600px) 500px, (min-width: 768px) 30vw, 100vw"
                 />
               </div>

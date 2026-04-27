@@ -15,7 +15,6 @@ export default function About() {
             <MediaSlot
               src={site.about.portraitPrimary.src}
               alt={site.about.portraitPrimary.alt}
-              fill
               sizes="(min-width: 1024px) 440px, (min-width: 768px) 40vw, 90vw"
             />
           </div>
@@ -42,7 +41,6 @@ export default function About() {
             ))}
           </div>
 
-          {/* Editorial pull-quote */}
           <blockquote className="relative pl-6 md:pl-8 border-l-2 border-accent py-2">
             <p className="font-headline uppercase tracking-[0.02em] leading-[1.15] text-on-surface text-2xl md:text-3xl lg:text-4xl max-w-2xl">
               &ldquo;Every frame is made by someone who was in the room before the camera came out.&rdquo;

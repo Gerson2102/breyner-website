@@ -59,9 +59,23 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 pb-10 flex flex-col md:flex-row justify-between gap-4 border-t border-outline/30 pt-6">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 pb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-t border-outline/30 pt-6">
         <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle">
-          © {new Date().getFullYear()} Steve LePerk. All rights reserved.
+          © {new Date().getFullYear()} {site.brand.name}. All rights reserved.
+        </p>
+        <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle md:text-center">
+          Made with{" "}
+          <span aria-hidden="true" className="text-accent animate-heartbeat text-base leading-none relative top-[2px]">♥</span>
+          <span className="sr-only">love</span>{" "}
+          by{" "}
+          <a
+            href="https://www.instagram.com/websites_by_ger"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors"
+          >
+            @websites_by_ger
+          </a>
         </p>
         <p className="font-headline uppercase tracking-[0.3em] text-[10px] text-on-surface-subtle">
           {site.footer.location}

@@ -1,6 +1,4 @@
-export type AspectRatio = "3/4" | "4/3" | "1/1" | "16/9" | "9/16";
-
-export type WorkTile = {
+type WorkTile = {
   id: string;
   title: string;
   context: string;
@@ -8,7 +6,7 @@ export type WorkTile = {
   alt: string;
 };
 
-export type SDTile = {
+type SDTile = {
   id: string;
   placeholder: string;
   alt: string;

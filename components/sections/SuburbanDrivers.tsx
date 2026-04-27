@@ -129,7 +129,6 @@ export default function SuburbanDrivers() {
                   <MediaSlot
                     src={tile.placeholder}
                     alt={tile.alt}
-                    fill
                     sizes="(min-width: 1280px) 18vw, (min-width: 1024px) 22vw, (min-width: 768px) 30vw, 62vw"
                   />
                 </div>

@@ -23,10 +23,7 @@ const frames: LightboxFrame[] = tiles.map((t) => ({
   context: t.context,
 }));
 
-/**
- * Explicit editorial bands. Each figure is a clickable tile that opens the lightbox.
- * Indices map 1:1 to tiles[] order in content/site.ts.
- */
+// Tile indices below map 1:1 to tiles[] order in content/site.ts.
 export default function SelectedWork() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const open = openIdx !== null;
@@ -142,7 +139,6 @@ function Tile({
         <MediaSlot
           src={t.placeholder}
           alt={t.alt}
-          fill
           priority={priority}
           sizes="(min-width: 1600px) 1536px, (min-width: 1024px) 80vw, 100vw"
         />
